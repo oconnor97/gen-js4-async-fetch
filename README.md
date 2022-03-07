@@ -10,7 +10,7 @@
     * Open VSCode, select `File` in the top right, and select `Open Folder` 
     * Find the folder you cloned named `gen-async-fetch-lesson` and open it, then begin working in the `script.js` file while using the instructions below.
 
-2. Select one group member to share their screen and work together to solve step of this activity. **Every individiual should be also coding in VSCode.** If you get stuck, don't forget to use your Google-Fu and problem solving skills. TA's will be hopping into each room to check in, message one of us on Slack for specific help.
+2. Select one group member to share their screen and work together to solve each step of this activity. **Every individiual should be also coding in VSCode.** If you get stuck, don't forget to use your Google-Fu and problem solving skills. TA's will be hopping into each room to check in, message one of us on Slack for specific help.
 
 3. It is completed when I click the "Fetch User Repos" button, and a list of my GitHub repositories displays on the page.
 
