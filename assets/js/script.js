@@ -1,22 +1,21 @@
-var repoList = document.querySelector("ul");
-var fetchButton = document.getElementById("fetch-button");
+const repoList = document.querySelector("ul");
+const fetchButton = document.getElementById("fetch-button");
+const myRepos = "https://api.github.com/users/flx1derrick/repos";
 
 //Create a getApi function that is called when the fetchButton is clicked
 
-function getApi() {
-  // Insert the API url to get a list of your repos
-  var requestUrl = "";
-
+const getApi = (requestUrl) => {
+  requestUrl = myRepos;
   fetch(requestUrl)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
-      //looping over the fetch response and inserting the URL of your repos into a list
-      //Create a list element
-      //Set the text of the list element to the JSON response's .html_url property
-      //Append the li element to the id associated with the ul element.
-    });
+      for (const key of Object.keys(data)) {
+               let li = document.createElement('li')
+               li.innerHTML +=  '<a href="' + data[key].html_url + '">' + data[key].html_url +'</a>'
+               repoList.appendChild(li);
+      }});
 }
 
 fetchButton.addEventListener("click", getApi);
