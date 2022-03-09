@@ -4,8 +4,8 @@ const fetchButton = document.getElementById("fetch-button");
 
 //Create a getApi function that is called when the fetchButton is clicked
 
-function getApi() {
-  var requestUrl = "https://api.github.com/users/flx1derrick/repos";
+const getApi = (requestUrl) => {
+  requestUrl = "https://api.github.com/users/flx1derrick/repos";
   fetch(requestUrl)
     .then(function (response) {
       return response.json();
